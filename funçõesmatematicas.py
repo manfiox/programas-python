@@ -67,7 +67,7 @@ def calculos_basicos():
     input("\nPressione qualquer tecla para continuar...")
 
         
-
+#Menu principal com as operações
 def main():
     while True:
         os.system("cls")
