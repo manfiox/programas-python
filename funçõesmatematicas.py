@@ -32,18 +32,52 @@ def numero_aleatorio():
    else:
        resultado = random.randint(inicio, fim)
        print(f"Número aleatório gerado entre {inicio} e {fim}: {resultado}")
-   
 
-#programa principal com menu de operações
+
+#função para calcular operações básicas
+def calculos_basicos():
+    numero1 = float(input("Digite o primeiro número: "))
+    numero2 = float(input("Digite o segundo número: "))
+    
+    print(f"\n=== Resultados das operações entre {numero1} e {numero2} ===")
+    
+    # Adição
+    adicao = numero1 + numero2
+    print(f"Adição: {numero1} + {numero2} = {adicao}")
+    
+    # Subtração
+    subtracao = numero1 - numero2
+    print(f"Subtração: {numero1} - {numero2} = {subtracao}")
+    
+    # Multiplicação
+    multiplicacao = numero1 * numero2
+    print(f"Multiplicação: {numero1} × {numero2} = {multiplicacao}")
+    
+    # Divisão
+    if numero2 != 0:
+        divisao = numero1 / numero2
+        print(f"Divisão: {numero1} ÷ {numero2} = {divisao}")
+    else:
+        print("Divisão: Não é possível dividir por zero!")
+    
+    # Potência
+    potencia = numero1 ** numero2
+    print(f"Potência: {numero1} elevado a {numero2} = {potencia}")
+    
+    input("\nPressione qualquer tecla para continuar...")
+
+        
+
 def main():
     while True:
         os.system("cls")
-        print("=== Menu de Operações ===")
+        print("\n=== Menu de Operações ===")
         print("1. Calcular Raiz Quadrada")
         print("2. Calcular Potência")
         print("3. Gerar Número Aleatório")
-        print("4. Sair")
-        escolha = input("Escolha uma opção (1-4): ")
+        print("4. Cálculos Básicos")
+        print("5. Sair")
+        escolha = input("Escolha uma opção (1-5): ")
 
         if escolha == '1':
             raiz_quadrada()
@@ -52,6 +86,8 @@ def main():
         elif escolha == '3':
             numero_aleatorio()
         elif escolha == '4':
+            calculos_basicos()
+        elif escolha == '5':
             print("Saindo do programa... Até logo!")
             break
         else:
