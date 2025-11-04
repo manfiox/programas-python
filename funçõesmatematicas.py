@@ -32,7 +32,7 @@ def numero_aleatorio():
    else:
        resultado = random.randint(inicio, fim)
        print(f"Número aleatório gerado entre {inicio} e {fim}: {resultado}")
-    input("Pressione qualquer tecla para continuar...")
+   input("Pressione qualquer tecla para continuar...")
 
 
 #função para calcular operações básicas
@@ -68,7 +68,7 @@ def calculos_basicos():
     input("\nPressione qualquer tecla para continuar...")
 
         
-#Menu principal com as operações
+#Menu com as operações que o usuario deverá escolher
 def main():
     while True:
         os.system("cls")
@@ -96,4 +96,4 @@ def main():
             input("Pressine qualquer tecla para continuar...")
 
 if __name__ == "__main__":
-    main()
+    main()  
