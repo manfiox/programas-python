@@ -32,6 +32,7 @@ def numero_aleatorio():
    else:
        resultado = random.randint(inicio, fim)
        print(f"Número aleatório gerado entre {inicio} e {fim}: {resultado}")
+    input("Pressione qualquer tecla para continuar...")
 
 
 #função para calcular operações básicas
